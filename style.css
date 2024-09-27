@@ -38,6 +38,12 @@
     animation: clouds 20s infinite Linear;
 }
 
+.atualize {
+    width: 500px;
+    margin: 0 auto;
+    display: none;
+}
+
 @keyframes pipe-animation { 
     from {
         right: -80px;
