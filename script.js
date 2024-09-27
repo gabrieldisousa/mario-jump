@@ -21,7 +21,7 @@ pipe.style.visibility = 'hidden'; // Pipe fica invisível
 // Após 1 segundo, o pipe aparece e a animação começa
 setTimeout(() => {
     pipe.style.visibility = 'visible'; // Pipe se torna visível
-}, 3000);
+}, 2000);
 
 
 loop = setInterval(() => {
@@ -54,7 +54,7 @@ loop = setInterval(() => {
         mario.style.left = '45px'
       
         clearInterval(loop);
-    }   else if (pipePosition < 0 && pipePosition > -50) {
+    }   else if (pipePosition < 0 && pipePosition > -50 && !scored) {
         // Se o Mario passou pelo pipe com sucesso
         score++; // Incrementa a pontuação
         scoreDisplay.innerText = `Score: ${score}`; // Atualiza o display da pontuação
@@ -65,7 +65,7 @@ loop = setInterval(() => {
         scored = false; // Reseta para permitir o próximo incremento
     }
 
-}, 50)
+}, 10)
 
 document.addEventListener('keydown', jump);
 document.addEventListener('touchstart', jump);
