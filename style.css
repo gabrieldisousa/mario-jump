@@ -36,6 +36,7 @@
     position: absolute;
     width: 500px;
     animation: clouds 20s infinite Linear;
+    bottom: 200px;
 }
 
 .atualize {
