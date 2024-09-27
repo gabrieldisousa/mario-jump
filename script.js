@@ -28,6 +28,12 @@ loop = setInterval(() => {
         mario.style.animation = 'none';
         mario.style.bottom = `${marioPosition}px`
 
+        
+        // Exibir imagem de atualização
+        atualize.style.display = 'block'; // Mostra a imagem "atualize"
+        atualize.src = 'atualize.png';
+        
+
         clouds.style.animation = 'none';
         clouds.style.left = `${cloudsPosition}px`
 
@@ -35,13 +41,7 @@ loop = setInterval(() => {
         mario.src = 'game-over.png' 
         mario.style.width = '65px'
         mario.style.left = '45px'
-
-            // Exibir imagem de atualização
-        atualize.style.display = 'block'; // Mostra a imagem "atualize"
-        atualize.src = 'atualize.png';
-    
-        
-
+      
         clearInterval(loop);
     }
 
